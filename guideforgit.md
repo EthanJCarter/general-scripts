@@ -6,6 +6,12 @@
 
 `gh clone repo user/repo_name` - download repo locally with git configuration
 
+`git remote add name urltorepo` - add an alias for the associated repo. This allows for easier ways to manage and maintain repos such as  
+
+> `git push aliasedrepo master`,
+
+which will push changes to *aliasedrepo* on the master branch.
+
 ### Branch management
 
 `git branch branchname` - creates a new branch, useful for keeping features isolated
