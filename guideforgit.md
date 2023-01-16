@@ -14,7 +14,7 @@
 
 `git-status` - list status of staged files and some brief information such as if the file has been modified or is a new file etc.
 
-`git commit -m " "` - commit staged git files with a message containing a descriptor of the nature of the commit (*e.g. "fixed a markdown header"*)]
+`git commit -m " "` - commit staged git files with a message containing a descriptor of the nature of the commit (*e.g. "fixed a markdown header"*)
 
 `git push` - push local commits to the online repository stored on github
 
