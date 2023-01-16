@@ -6,6 +6,24 @@
 
 `gh clone repo user/repo_name` - download repo locally with git configuration
 
+### Branch management
+
+`git branch branchname` - creates a new branch, useful for keeping features isolated
+
+`git branch -a` - view all branches, current branch is indicated by a asterisk
+
+`git checkout branchname` - switch to a different branch
+
+`git checkout -b branchname` - create a new branch and switch to that branch immediately (*a quicker means of creating and moving to a branch*)
+
+`git branch -d branchname` - delete named branch (*lowercase d only works for merged branches, D covers unmerged branches*)
+
+`git merge branchname` - merge branch onto **current** branch (*i.e. move to master/main and then merge branch-a to merge the changes on branch-a to master*)
+
+#### Conflicts
+
+If changes are found between the master branch and the feature-a branch that aren't new additions then a conflict will occur when an attempt it made to merge feature-a onto master. A prompt will come up, and the system will need help to manually review the conflict and commit the agreed changes.
+
 ### Managing file changes
 
 `git add filename` - stage file(s) for a commit (*use . to denote all files in the directory*)
