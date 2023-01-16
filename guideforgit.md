@@ -12,6 +12,8 @@
 
 which will push changes to *aliasedrepo* on the master branch.
 
+`git remote -v` - list available repositories for fetch/push
+
 ### Branch management
 
 `git branch branchname` - creates a new branch, useful for keeping features isolated
