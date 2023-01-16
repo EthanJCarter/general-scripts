@@ -1,5 +1,6 @@
 # .bashrc
-#PERSONAL MACHINE, HANDY ALIASES AND SETUP FOR PHANTOM
+#HANDY ALIASES AND SETUP FOR PHANTOM ON LOCAL MACHINE
+#NOTE THAT THIS IS FOR A BASH SHELL SPECIFICALLY
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
@@ -31,9 +32,9 @@ unset rc
 alias c='clear'
 alias la='ls -a'
 alias ll='ls -l'
-alias star='ssh -x -p 3322 ecarter6@stargate.uclan.ac.uk'
-alias makephan='~/Documents/Uni/PhD/code/PHANTOM0123/phantom/scripts/writemake.sh'
-alias tophantom='cd ~/Documents/Uni/PhD/code/PHANTOM0123/'
+alias star='ssh -x -p 3322 user@stargate.uclan.ac.uk' #for accessing starlink
+alias makephan='~/pathtophantom/phantom/scripts/writemake.sh' #for creating a makefile
+alias tophantom='cd ~/pathtophantom/' #way of getting to the phantom directory
 
 # >>> PHANTOM SETUP <<<
 # !! required to use phantom as per the docs
@@ -46,10 +47,15 @@ export SPLASH_DIR=$HOME/packages/splash
 export PATH=$PATH:$SPLASH_DIR/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$SPLASH_DIR/giza/lib
 
+# initialises locally installed inten oneapi 
+# !! need to run before using ifort compiler
 alias initoneapi='. /opt/intel/oneapi/setvars.sh #Initialise intel oneAPI environment'
+
 
 #source /opt/intel/bin/compilervars.sh intel64 #DOES NOT WORK
 
+
+# !! NEEDED FOR ANACONDA !! INITIALISES ON TERMINAL LAUNCH !!
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/usr/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
@@ -65,6 +71,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-PATH=$PATH:/home/ecarter/.cargo/bin
-
-eval "$(thefuck --alias)"
+#Defined path for cargo
+PATH=$PATH:/home/user/.cargo/bin
