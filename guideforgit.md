@@ -20,10 +20,6 @@
 
 `git merge branchname` - merge branch onto **current** branch (*i.e. move to master/main and then merge branch-a to merge the changes on branch-a to master*)
 
-#### Conflicts
-
-If changes are found between the master branch and the feature-a branch that aren't new additions then a conflict will occur when an attempt it made to merge feature-a onto master. A prompt will come up, and the system will need help to manually review the conflict and commit the agreed changes.
-
 ### Managing file changes
 
 `git add filename` - stage file(s) for a commit (*use . to denote all files in the directory*)
@@ -53,3 +49,7 @@ If changes are found between the master branch and the feature-a branch that are
 `git reset commitID` - **UNSAFE** - resets repository to the state at a given commit (*later commits are deleted entirely*). The edited files will remain accessible in the editor as a final means to re-commit any changes that should be kept
 
 `git reset commitID --hard` - **EXTREMELY UNSAFE** - remove commit entirely, edited files are not temporarily available in the editor meaning there is *no going back*
+
+#### Side Note: Conflicts
+
+If changes are found between the master branch and the feature-a branch that aren't new additions then a conflict will occur when an attempt is made to merge feature-a onto master. A prompt will come up, and the system will need help to manually review the conflict and commit the agreed changes.
