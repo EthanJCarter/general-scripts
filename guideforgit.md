@@ -4,7 +4,7 @@
 
 ### Repo management
 
-`gh clone repo user/repo_name` - download repo locally with git configuration
+`git clone repo user/repo_name` - download contents of repo locally with git configuration
 
 `git remote add name urltorepo` - add an alias for the associated repo. This allows for easier ways to manage and maintain repos such as  
 
@@ -39,6 +39,8 @@ which will push changes to *aliasedrepo* on the master branch.
 `git commit -m " "` - commit staged git files with a message containing a descriptor of the nature of the commit (*e.g. "fixed a markdown header"*)
 
 `git push` - push local commits to the online repository stored on github
+
+`git fetch` - grab changes from the online repository and bring them to the local version
 
 ### Viewing logs
 
