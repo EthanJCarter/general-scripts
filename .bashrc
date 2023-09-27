@@ -32,7 +32,7 @@ unset rc
 alias c='clear'
 alias la='ls -a'
 alias ll='ls -l'
-alias star='ssh -x -p 3322 user@stargate.uclan.ac.uk' #for accessing starlink
+alias star='ssh -x -P PORT user@stargate.uclan.ac.uk' #for accessing starlink
 alias makephan='~/pathtophantom/phantom/scripts/writemake.sh' #for creating a makefile
 alias tophantom='cd ~/pathtophantom/' #way of getting to the phantom directory
 
