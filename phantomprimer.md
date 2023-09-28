@@ -159,7 +159,7 @@ As we are using a barotropic equation of state, we set a slope, *gamma* which wi
     gamma3 =       1.100    ! adiabatic index 3 (barotropic eos)
     gamma4 =       1.100    ! adiabatic index 4 (barotropic eos)
 
-This should *roughly* correspond to an initial turnoff, a turnoff around $T=100\rm~K$, and another around $T=2000\rm~K$ (dissociation of $H_{2}$). I will not explain how each equation of state works here, but if you need further information please ask.
+This should *roughly* correspond to an initial turnoff, a turnoff around $T=100K$, and another around $T=2000K$ (dissociation of $H_{2}$). I will not explain how each equation of state works here, but if you need further information please ask.
 
 ### Run the Code
 
