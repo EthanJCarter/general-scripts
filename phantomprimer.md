@@ -55,7 +55,7 @@ For ease, we'll add our own custom setup at the top here, though I'd also recomm
     DISC_VISCOSITY=yes
     SETUPFILE= setup_disc.f90
     ANALYSIS= analysis_disc.f90
-    ISOTHERMAL= yes
+    ISOTHERMAL= no
     PERIODIC = no
     GRAVITY = yes
     KNOWN_SETUP=yes
