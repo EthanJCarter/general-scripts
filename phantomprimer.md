@@ -163,7 +163,7 @@ This should *roughly* correspond to an initial turnoff, a turnoff around $T=100K
 
 ### Run the Code
 
-Now for the easy part, we can finally run the simulation by once again using
+We can finally run the simulation by once again using
 
     ./phantom disc.in
 
